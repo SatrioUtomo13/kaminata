@@ -4,16 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Kaminata</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- start container -->
     <div class="container flex  w-screen h-screen">
-        <div class="bg-[#2d2b2c] basis-1/4">
-            <img src="../asset/img/logo1.png" alt="CompanyLogo" class="w-1/2">
-            <img src="../asset/img/navbar.png" alt="menu" class="w-4">
+        <!-- start sidebar -->
+        <div class="bg-[#2d2c2c] basis-1/4">
+            <!-- start logo -->
+            <div class="flex justify-around h-32 items-center ">
+                <img src="../asset/img/logo1.png"            alt="CompanyLogo" class="w-1/2 h-1/2">
+                <img src="../asset/img/navbar1.png" alt="menu" class="w-[10%] cursor-pointer">
+            </div>
+            <!-- finish logo -->
+            <!-- start menu -->
+            <div class="divide-y divide-slate-200">
+                <div class="flex items-center border-t border-slate-200">
+                    <img src="../asset/img/home.png" alt="home menu" class="h-6 w-6 mx-3 my-2">
+                    <a href="#" class=" font-poppins text-white">Home</a>
+                </div>
+                <div class="flex items-center">
+                    <img src="../asset/img/masterbarang.png" alt="home menu" class="h-6 w-6 mx-3 my-2">
+                    <a href="#" class="text-white font-poppins">Master Barang</a>
+                </div>
+                <div class="flex items-center">
+                    <img src="../asset/img/client.png" alt="home menu" class="h-6 w-6 mx-3 my-2">
+                    <a href="#" class="text-white font-poppins">Client</a>
+                </div>
+                <div class="flex items-center">
+                    <img src="../asset/img/pendapatan.png" alt="home menu" class="h-6 w-6 mx-3 my-2">
+                    <a href="#" class="text-white font-poppins">Pendapatan</a>
+                </div>
+                <div class="flex items-center">
+                    <img src="../asset/img/statement.png" alt="home menu" class="h-6 w-6 mx-3 my-2">
+                    <a href="#" class="text-white font-poppins">E-Statement</a>
+                </div>
+                <div class="flex items-center">
+                    <img src="../asset/img/simulasi.png" alt="home menu" class="h-6 w-6 mx-3 my-2">
+                    <a href="#" class="text-white font-poppins">Form Simulasi</a>
+                </div>
+                <div class="flex items-center">
+                    <img src="../asset/img/invoice.png" alt="home menu" class="h-6 w-6 mx-3 my-2">
+                    <a href="#" class="text-white font-poppins">Invoice</a>
+                </div>
+                <div></div>
+            </div>
+            <!-- finish menu -->
         </div>
-        <div class=""></div>
+        <!-- finish side bar -->
+        <!-- start main -->
+        <div class="bg-[#F0F0F0] basis-3/4">
+            <!-- start header -->
+            <header class="flex items-center m-12 w-2/4 justify-between">
+                <img src="../asset/img/profil.jpg" alt="profile" class="w-24 h-1/6">
+                <h1 class="text-4xl font-poppins font-medium">Kaminata Tools</h1>
+                <img src="../asset/img/logo.png" alt="logo" class="h-16">
+            </header>
+            <!-- finish header -->
+            <!-- start box -->
+            <div class="grid grid-cols-3 mx-12 gap-x-11 gap-y-6 font-poppins">
+                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Home</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Master Barang</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Client</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Pendapatan</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">E-Statement</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Form Simulasi</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Invoice</div></a>
+                <div class="bg-[#F0F0F0] h-28 flex col-start-3 justify-end">
+                    <a href="" class="flex justify-end self-end w-1/4 h-1/2"><img src="../asset/img/logout.png" alt="logout" class="w-full h-full self-end"></a>
+                </div>
+            </div>
+            <!-- finish box -->
+        </div>
+        <!-- finish main -->
     </div>
 
 </body>
