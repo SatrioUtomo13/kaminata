@@ -13,23 +13,25 @@
 </head>
 <body>
     <!-- start container -->
-    <div class="container flex  w-screen h-screen">
+    <div class="container flex  w-screen h-screen" id="main">
         <!-- start sidebar -->
         <div class="bg-secondary basis-1/4">
             <!-- start logo -->
             <div class="flex justify-around h-32 items-center ">
                 <img src="../asset/img/logo1.png" alt="CompanyLogo" class="w-1/2 h-1/2">
-                <img src="../asset/img/navbar1.png" alt="menu" class="w-[10%] cursor-pointer">
+                <!-- <img src="../asset/img/navbar1.png" alt="menu" class="w-[10%] cursor-pointer"> -->
             </div>
             <!-- finish logo -->
             <!-- start menu -->
             <div class="divide-y divide-slate-200">
-                <div class="flex items-center border-t border-slate-200 cursor-pointer text-white hover:bg-primary hover:text-black hover:font-extrabold transition duration-150">
-                    <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="h-6 w-6 mx-3 my-2">
-                        <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
-                    </svg>
-                    <a href="#" class=" font-poppins">Home</a>
-                </div>
+                <a href="" class="font-poppins block w-full">
+                    <div class="flex items-center border-t border-slate-200 cursor-pointer text-white hover:bg-primary hover:text-black hover:font-extrabold transition duration-150">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="h-6 w-6 mx-3 my-2">
+                            <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                        </svg>
+                        <h1>Home</h1>
+                    </div>
+                </a>
                 <div class="flex items-center cursor-pointer text-white hover:bg-primary hover:text-black hover:font-extrabold transition duration-150">
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="h-6 w-6 mx-3 my-2 ">
                         <path fill="currentColor" d="M21 3H3V9H21V3M19 7H5V5H19V7M14.5 11C14.78 11 15 11.22 15 11.5V13H9V11.5C9 11.22 9.22 11 9.5 11H14.5M18 13.09V10H20V13.09C19.67 13.04 19.34 13 19 13C18.66 13 18.33 13.04 18 13.09M13 19C13 19.7 13.13 20.37 13.35 21H4V10H6V19H13M22.5 17.25L17.75 22L15 19L16.16 17.84L17.75 19.43L21.34 15.84L22.5 17.25Z" />
@@ -72,7 +74,7 @@
         </div>
         <!-- finish side bar -->
         <!-- start main -->
-        <div class="bg-primary basis-3/4" id="main">
+        <div class="bg-primary basis-3/4">
             <!-- start header -->
             <header class="flex items-center m-12 w-2/4 justify-between">
                 <img src="../asset/img/profil.png" alt="profile" class="w-24 h-1/6">
@@ -102,21 +104,21 @@
             <!-- finish box -->
         </div>
         <!-- finish main -->
-        <!-- start logout confirm -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white outline outline-1 outline-gray-400 rounded-xl hidden flex-col items-center px-7 py-4 shadow-lg z-10" id="confirm">
-            <svg viewBox="0 0 24 24" class=" h-28 text-red-600">
-                <path fill="currentColor" d="M10 3H14V14H10V3M10 21V17H14V21H10Z" />
-            </svg>
-            <h1 class="text-3xl font-bold mb-3">Are You Sure?</h1>
-            <div class=" w-full flex justify-around">
-                <button class="bg-white hover:bg-slate-50 py-0.5 px-5 rounded-sm">Cancel</button>
-                <a href="index.html">
-                    <button class="bg-secondary text-white py-0.5 px-5 rounded-sm">Yes</button>
-                </a>
-            </div>
-        </div>
-        <!-- finish logout confirm -->
     </div>
+    <!-- start logout confirm -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white outline outline-1 outline-gray-400 rounded-xl hidden flex-col items-center px-7 py-4 shadow-lg z-50" id="confirm">
+        <svg viewBox="0 0 24 24" class=" h-28 text-red-600">
+            <path fill="currentColor" d="M10 3H14V14H10V3M10 21V17H14V21H10Z" />
+        </svg>
+        <h1 class="text-3xl font-bold mb-3">Are You Sure?</h1>
+        <div class=" w-full flex justify-around">
+            <button class="bg-slate-100 hover:bg-slate-200 py-0.5 px-5 rounded-sm" id="close">Cancel</button>
+            <a href="index.html">
+                <button class="bg-secondary hover:bg-[#060505] text-white py-0.5 px-5 rounded-sm">Yes</button>
+            </a>
+        </div>
+    </div>
+    <!-- finish logout confirm -->
 <script src="script.js"></script>
 </body>
 </html>

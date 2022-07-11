@@ -4,5 +4,4 @@
 
 .blur{
     backdrop-filter: blur(2);
-    z-index: 2;
 }
