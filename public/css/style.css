@@ -554,6 +554,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 3rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .ml-7 {
   margin-left: 1.75rem;
 }
@@ -576,6 +581,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -610,12 +619,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.5rem;
 }
 
-.h-1\/6 {
-  height: 16.666667%;
-}
-
 .h-16 {
   height: 4rem;
+}
+
+.h-1\/6 {
+  height: 16.666667%;
 }
 
 .h-28 {
@@ -656,10 +665,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-2\/4 {
-  width: 50%;
 }
 
 .w-24 {
@@ -752,6 +757,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .self-end {
   align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .rounded-sm {
@@ -966,16 +975,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[\#212020\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 32 32 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#fff\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-\[\#060505\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(6 5 5 / var(--tw-bg-opacity));
@@ -988,16 +987,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.active\:bg-primary:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
-}
-
-.hover\:active\:bg-primary:active:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px) {
