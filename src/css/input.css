@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.blur{
-    backdrop-filter: blur(2);
+.profile-click{
+    display : block;
 }

@@ -74,34 +74,36 @@
         </div>
         <!-- finish side bar -->
         <!-- start main -->
-        <div class="bg-primary grow">
+        <div class="bg-primary grow relative">
             <!-- start header -->
             <header class="flex items-center mx-12 mt-3 justify-between ">
                 <div class="flex">
                     <img src="../asset/img/logo.png" alt="logo" class="h-16">
                     <h1 class="text-5xl font-poppins self-center font-bold">Kaminata Tools</h1>
                 </div>
-                <img src="../asset/img/profil.png" alt="profile" class="w-24 h-1/6 cursor-pointer">
-                <!-- start profile click -->
-                <div class="bg-red-600 py-5 pr-7 hidden">
-                    <div class="mx-3">
-                        <h1>Alvin Azalia</h1>
-                        <h2>Interior Design</h2>
-                    </div>
-                    <hr width="120%" class="my-3">
-                    <div class="flex">
-                        <?xml version="1.0" ?><svg class="w-10 p-2" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><g id="user"><ellipse cx="12" cy="8" rx="5" ry="6"/><path d="M21.8,19.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9s-2.2-0.3-3.2-0.9    C8.3,14.8,7.6,14.7,7,15c-2.2,0.9-3.9,2.4-4.8,4.2C1.5,20.5,2.6,22,4.1,22h15.8C21.4,22,22.5,20.5,21.8,19.1z"/></g></g></svg>
-                        <h1 class="self-center">Profile</h1>
-                    </div>
-                    <div class="flex">
-                        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="w-10 p-2" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M478.8,512H33.2c-5.8,0-10.5-4.7-10.5-10.5V209.1c0-5.8,4.7-10.5,10.5-10.5h445.6c5.8,0,10.5,4.7,10.5,10.5   v292.4C489.3,507.3,484.6,512,478.8,512z M43.8,490.9h424.5V219.6H43.8V490.9z" fill="#000"/><path d="M443.6,208.7c-5.8,0-10.5-4.7-10.5-10.5c0-97.6-79.4-177.1-177.1-177.1S78.9,100.5,78.9,198.2   c0,5.8-4.7,10.5-10.5,10.5s-10.5-4.7-10.5-10.5C57.8,88.9,146.7,0,256,0s198.2,88.9,198.2,198.2C454.2,204,449.4,208.7,443.6,208.7   z" fill="#000"/><path d="M256,437c-5.8,0-10.5-4.7-10.5-10.5v-61.8c0-5.8,4.7-10.5,10.5-10.5c5.8,0,10.5,4.7,10.5,10.5v61.8   C266.5,432.2,261.8,437,256,437z" fill="#000"/><path d="M256,369.7c-26.5,0-48.1-21.6-48.1-48.1c0-26.5,21.6-48.1,48.1-48.1s48.1,21.6,48.1,48.1   C304.1,348.2,282.5,369.7,256,369.7z M256,294.7c-14.9,0-27,12.1-27,27s12.1,27,27,27s27-12.1,27-27S270.9,294.7,256,294.7z" fill="#6A6E7C"/></g></svg>
-                        <h1 class="self-center">Ganti Password</h1>
-                    </div>
-                    <div class="flex">
-                        <svg viewBox="0 0 24 24" class="w-10 p-2">
-                            <path fill="currentColor" d="M16,17V14H9V10H16V7L21,12L16,17M14,2A2,2 0 0,1 16,4V6H14V4H5V20H14V18H16V20A2,2 0 0,1 14,22H5A2,2 0 0,1 3,20V4A2,2 0 0,1 5,2H14Z" />
-                        </svg>
-                        <h1 class="self-center">Keluar</h1>
+                <div>
+                    <img src="../asset/img/profil.png" alt="profile" class="w-24 h-1/6 cursor-pointer" id="profile">
+                    <!-- start profile click -->
+                    <div class="bg-[#D9D9D9] py-5 pr-7 absolute right-12 font-poppins rounded-xl hidden " id="profile-click">
+                        <div class="mx-3">
+                            <h1 class="font-bold">Alvin Azalia</h1>
+                            <h2>Interior Design</h2>
+                        </div>
+                        <hr width="120%" class="my-3">
+                        <div class="flex">
+                            <?xml version="1.0" ?><svg class="w-10 p-2" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><g id="user"><ellipse cx="12" cy="8" rx="5" ry="6"/><path d="M21.8,19.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9s-2.2-0.3-3.2-0.9    C8.3,14.8,7.6,14.7,7,15c-2.2,0.9-3.9,2.4-4.8,4.2C1.5,20.5,2.6,22,4.1,22h15.8C21.4,22,22.5,20.5,21.8,19.1z"/></g></g></svg>
+                            <h1 class="self-center font-bold">Profile</h1>
+                        </div>
+                        <div class="flex">
+                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="w-10 p-2" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M478.8,512H33.2c-5.8,0-10.5-4.7-10.5-10.5V209.1c0-5.8,4.7-10.5,10.5-10.5h445.6c5.8,0,10.5,4.7,10.5,10.5   v292.4C489.3,507.3,484.6,512,478.8,512z M43.8,490.9h424.5V219.6H43.8V490.9z" fill="#000"/><path d="M443.6,208.7c-5.8,0-10.5-4.7-10.5-10.5c0-97.6-79.4-177.1-177.1-177.1S78.9,100.5,78.9,198.2   c0,5.8-4.7,10.5-10.5,10.5s-10.5-4.7-10.5-10.5C57.8,88.9,146.7,0,256,0s198.2,88.9,198.2,198.2C454.2,204,449.4,208.7,443.6,208.7   z" fill="#000"/><path d="M256,437c-5.8,0-10.5-4.7-10.5-10.5v-61.8c0-5.8,4.7-10.5,10.5-10.5c5.8,0,10.5,4.7,10.5,10.5v61.8   C266.5,432.2,261.8,437,256,437z" fill="#000"/><path d="M256,369.7c-26.5,0-48.1-21.6-48.1-48.1c0-26.5,21.6-48.1,48.1-48.1s48.1,21.6,48.1,48.1   C304.1,348.2,282.5,369.7,256,369.7z M256,294.7c-14.9,0-27,12.1-27,27s12.1,27,27,27s27-12.1,27-27S270.9,294.7,256,294.7z" fill="#6A6E7C"/></g></svg>
+                            <h1 class="self-center font-bold">Ganti Password</h1>
+                        </div>
+                        <div class="flex">
+                            <svg viewBox="0 0 24 24" class="w-10 p-2">
+                                <path fill="currentColor" d="M16,17V14H9V10H16V7L21,12L16,17M14,2A2,2 0 0,1 16,4V6H14V4H5V20H14V18H16V20A2,2 0 0,1 14,22H5A2,2 0 0,1 3,20V4A2,2 0 0,1 5,2H14Z" />
+                            </svg>
+                            <h1 class="self-center font-bold">Keluar</h1>
+                        </div>
                     </div>
                 </div>
                 <!-- finish profile click -->
@@ -110,19 +112,20 @@
             <!-- finish header -->
             <!-- start box -->
             <div class="grid grid-cols-3 mx-12 gap-x-11 gap-y-6 font-poppins">
-                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Home</div></a>
-                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Master Barang</div></a>
-                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Client</div></a>
-                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Pendapatan</div></a>
-                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">E-Statement</div></a>
-                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Form Simulasi</div></a>
-                <a href=""><div class="bg-white h-28 flex items-center justify-center hover:border hover:border-black">Invoice</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center border border-black hover:border-blue-300">Home</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center border border-black hover:border-blue-300">Master Barang</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center border border-black hover:border-blue-300">Client</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center border border-black hover:border-blue-300">Pendapatan</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center border border-black hover:border-blue-300">E-Statement</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center border border-black hover:border-blue-300">Form Simulasi</div></a>
+                <a href=""><div class="bg-white h-28 flex items-center justify-center border border-black hover:border-blue-300">Invoice</div></a>
                 <!-- start logout button -->
-                <div class="bg-[#F0F0F0] h-28 flex col-start-3 justify-end" id="logout">
-                    <a href="#" class="flex justify-end self-end w-1/4 h-1/2">
-                        <svg viewBox="0 0 24 24" class="w-full h-full self-end">
+                <div class="bg-[#F0F0F0] h-28 flex col-start-3 justify-end flex-col" id="logout">
+                    <!-- <a href="#" class="flex justify-end self-end w-1/4 h-1/2"> -->
+                        <svg viewBox="0 0 24 24" class="w-1/6 h-1/2 self-end">
                             <path fill="currentColor" d="M16,17V14H9V10H16V7L21,12L16,17M14,2A2,2 0 0,1 16,4V6H14V4H5V20H14V18H16V20A2,2 0 0,1 14,22H5A2,2 0 0,1 3,20V4A2,2 0 0,1 5,2H14Z" />
                         </svg>
+                        <h1 class="self-end font-poppins font-bold">Logout</h1>
                     </a>
                 </div>
                 <!-- finish logout button -->
