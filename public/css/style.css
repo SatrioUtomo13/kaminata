@@ -534,6 +534,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 1.25rem;
 }
 
+.top-12 {
+  top: 3rem;
+}
+
+.top-14 {
+  top: 3.5rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.top-\[70px\] {
+  top: 70px;
+}
+
 .z-50 {
   z-index: 50;
 }
