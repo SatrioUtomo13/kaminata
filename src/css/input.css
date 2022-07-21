@@ -5,3 +5,11 @@
 .profile-click{
     display : block;
 }
+.gfg {
+    border-collapse:separate;
+    border-spacing:0 15px;
+}
+.gff {
+    padding-top : 4px;
+    padding-bottom : 4px;
+}
