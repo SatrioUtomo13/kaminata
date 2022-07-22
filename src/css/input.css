@@ -9,7 +9,15 @@
     border-collapse:separate;
     border-spacing:0 15px;
 }
+.gfg-statement {
+    border-collapse:separate;
+    border-spacing:0 5px;
+}
 .gff {
-    padding-top : 4px;
-    padding-bottom : 4px;
+    padding-top : 8px;
+    padding-bottom : 8px;
+}
+.gfc {
+    border-collapse:separate;
+    border-spacing:0 11px;
 }
