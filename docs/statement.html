@@ -119,17 +119,23 @@
             <div class="mx-5 flex">
                 <!-- start calender -->
                 <div class="w-1/3">
-                    <div class="flex justify-between">
-                        <div class="w-28 h-9 items-center outline outline-1 rounded-md flex justify-around shadow-[0_4px_4px_rgba(0,0,0,0.25)]">Date
+                    <div class="flex justify-between mb-4">
+                        <div class="w-28 h-9 items-center outline outline-1 rounded-md flex justify-around shadow-[0_4px_4px_rgba(0,0,0,0.25)] cursor-pointer">Date
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="currentColor" d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
                             </svg>
                         </div>
-                        <div class="w-28 h-9 items-center outline outline-1 rounded-md flex justify-around shadow-[0_4px_4px_rgba(0,0,0,0.25)] mr-5">Month
+                        <div class="w-28 h-9 items-center outline outline-1 rounded-md flex justify-around shadow-[0_4px_4px_rgba(0,0,0,0.25)] mr-5 cursor-pointer">Month
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                             </svg>
                         </div>
+                    </div>
+                    <!-- embed calender from google -->
+                    <iframe src="https://calendar.google.com/calendar/embed?height=298&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FJakarta&showTitle=0&showPrint=0&showNav=1&src=c2F0cmlvLnV0b21vMTMwNzk5QGdtYWlsLmNvbQ&src=aHR0b3YwYXNnNHJ2ZWpwYXNkOTBkcXZlaTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=Y2xhc3Nyb29tMTEwNjQyNTU1ODk0MTYzMTc0MTg5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE3MjM2NTI1MDk2MDM3Mzk1MzYwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTA3OTU3MzAwNDU5MjU2MDQzMDQ2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAyOTI0MDIxNTQ0MTYxMzUwNzU1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE1ODU4MTA1NTU1OTEzMzA0NjM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=aWQuaW5kb25lc2lhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4uaW5kb25lc2lhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=Y2xhc3Nyb29tMTA4ODMxNzExNjgxMDQxOTQ5NjkxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAxMzU5NDQwMDY0OTk2NjkxMzEyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA2MDAzMDI5MTYwOTA4MzUyNDA2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEzODQ4ODUzODQzNDE4ODQyNzUzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA3NzY4MDIwMDIzNDY0ODc5ODcwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAwMjg4Mzk3NjQ1OTU5MTU4NTY3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA1MDM4NjU3NjQ1MjUzNzQxMTg2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTExMTE4MDQ3MDk3ODAzMTExMDk0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAxNzc3MjE0MTMwMTA3NTI4MzkzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE3NjM2MzQxNzc0ODQ0NDk0MzYxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAxMzQ2OTk3MTY5MzE4MjUzNjcyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA3NTk1MDYyNjI3MTk3MzEyNDIxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE3MTU5MDcwODEzNzIxNDY2MjQ2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%237CB342&color=%23c26401&color=%23007b83&color=%2333B679&color=%23202124&color=%230047a8&color=%23137333&color=%237986CB&color=%230B8043&color=%23202124&color=%23137333&color=%23137333&color=%230047a8&color=%230047a8&color=%23202124&color=%23202124&color=%23137333&color=%230047a8&color=%23c26401&color=%23137333&color=%230047a8&color=%23137333" style="border:solid 1px #000" height="250" frameborder="0" scrolling="no" class="w-4/5"></iframe>
+                    <div class="flex justify-between mt-9 w-3/4">
+                        <div class="bg-black px-5 py-1 rounded-lg text-white font-poppins font-bold shadow-[0_4px_4px_rgba(0,0,0,0.25)] cursor-pointer">View</div>
+                        <div class="bg-black px-5 py-1 rounded-lg text-white font-poppins font-bold shadow-[0_4px_4px_rgba(0,0,0,0.25)] cursor-pointer">Download</div>
                     </div>
                 </div>
                 <!-- finish calender -->
@@ -204,7 +210,7 @@
                 <!-- finish table -->
             </div>
             <!-- start nav -->
-            <nav class="flex w-1/4 m-auto justify-between">
+            <nav class="flex w-1/4 m-auto justify-between mt-3">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="cursor-pointer">
                     <path fill="currentColor" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
                 </svg>
