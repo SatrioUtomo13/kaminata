@@ -5,12 +5,6 @@ profile.addEventListener('click', function(){
     profileClick.classList.toggle('profile-click')
 })
 
-
-
-
-
-
-
 // konfirmasi logout
 const logout = document.getElementById("logout");
 const konfirmasi = document.getElementById("confirm");
@@ -24,3 +18,5 @@ close.addEventListener('click', function(){
     konfirmasi.style.display = 'none';
     main.style.display = 'flex';
 })
+
+const x = 10;
