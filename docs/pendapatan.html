@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Kaminata</title>
     <link rel="stylesheet" href="../public/css/style.css">
+    <!-- script from chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <!-- start container -->
@@ -91,7 +93,7 @@
                 <!-- start logo -->
                 <div class="flex">
                     <img src="../asset/img/logo.png" alt="logo" class="h-16">
-                    <h1 class="text-5xl font-poppins self-center font-bold">Master Barang</h1>
+                    <h1 class="text-5xl font-poppins self-center font-bold">Pendapatan</h1>
                 </div>
                 <!-- finish logo -->
                 <div class="flex">
@@ -130,106 +132,67 @@
                 <!-- finish profile click -->
             </header>
             <!-- finish header -->
-            <!-- start tambah & hapus -->
-            <div class="flex items-center mx-12 mt-16 justify-between">
-                <div>
-                    <a href="" class="bg-secondary py-2 px-4 rounded-xl text-white">Tambah Barang</a>
-                    <a href="" class="bg-secondary py-2 px-4 rounded-xl text-white">Hapus Barang</a>
+            <!-- start chart -->
+            <div class="max-w-7xl w-2/3 mx-auto border border-black rounded-xl mt-3">
+                <canvas id="myChart"></canvas>
+            </div>
+            <script>
+                const labels = [
+                'Jan',
+                'Feb',
+                'Mar',
+                'Apr',
+                'May',
+                'Jun',
+                'Jul',
+                'Aug',
+                'Sep',
+                'Okt',
+                'Nov',
+                'Des',
+                ];
+                
+                const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'Monthly Revenue Chart (in millions)',
+                    backgroundColor: 'black',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [5, 5, 8, 6, 13, 5, 18, 8, 13, 12, 7, 13,],
+                }]
+                };
+
+                const config = {
+                    type: 'bar',
+                    data: data,
+                    options: {}
+                };
+
+                const myChart = new Chart(
+                    document.getElementById('myChart'),
+                    config
+                );
+            </script>
+            <!-- finish chart -->
+            <!-- start user -->
+            <div class="w-2/3 mx-auto mt-4 font-poppins flex justify-between">
+                <div class="w-1/4 border shadow-md border-black rounded-xl px-3 py-1">
+                    <img src="../asset/img/profil.png" alt="" class="w-10 m-auto">
+                    <h1>Rp.1.000.000</h1>
+                    <p class="text-slate-300">user1</p>
                 </div>
-                <p>showing 1 to 6 of 20 entire</p>
+                <div class="w-1/4 border shadow-md border-black rounded-xl px-3 py-1">
+                    <img src="../asset/img/profil.png" alt="" class="w-10 m-auto">
+                    <h1>Rp.1.000.000</h1>
+                    <p class="text-slate-300">user1</p>
+                </div>
+                <div class="w-1/4 border shadow-md border-black rounded-xl px-3 py-1">
+                    <img src="../asset/img/profil.png" alt="" class="w-10 m-auto">
+                    <h1>Rp.1.000.000</h1>
+                    <p class="text-slate-300">user1</p>
+                </div>
             </div>            
-            <!-- finish tambah & hapus -->            
-            <!-- start table -->
-            <table class= "mx-12 mt-5 w-10/12 gfg">
-                <tr>
-                    <th>No</th>
-                    <th>Kode Barang</th>
-                    <th>Nama Barang</th>
-                    <th>Jumlah Barang</th>
-                    <th>Status Barang</th>
-                    <th>Opsi</th>
-                </tr>
-                <tr class="text-center outline outline-black rounded-md">
-                    <td class="gff">1</td>
-                    <td>KD001</td>
-                    <td>Komputer Acer</td>
-                    <td>10</td>
-                    <td>
-                        <span class="bg-[#FFE923] px-1 rounded-md">Proses</span>
-                    </td>
-                    <td>
-                        <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="m-auto cursor-pointer">
-                            <path fill="currentColor" d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
-                        </svg>
-                    </td>
-                </tr>
-                <tr class="text-center outline outline-black rounded-md">
-                    <td class="gff">2</td>
-                    <td>KD002</td>
-                    <td>Komputer Asus</td>
-                    <td>20</td>
-                    <td>
-                        <span class="bg-[#23FF61] px-1 rounded-md">Selesai</span>
-                    </td>
-                    <td>
-                        <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="m-auto cursor-pointer">
-                            <path fill="currentColor" d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
-                        </svg>
-                    </td>
-                </tr>
-                <tr class="text-center outline outline-black rounded-md">
-                    <td class="gff">3</td>
-                    <td>KD003</td>
-                    <td>Komputer Dell</td>
-                    <td>50</td>
-                    <td>
-                        <span class="bg-[#FF2C2C] px-1 rounded-md">Pending</span>
-                    </td>
-                    <td>
-                        <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="m-auto cursor-pointer">
-                            <path fill="currentColor" d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
-                        </svg>
-                    </td>
-                </tr>    
-                <tr class="text-center outline outline-black rounded-md">
-                    <td class="gff">4</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr class="text-center outline outline-black rounded-md">
-                    <td class="gff">5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr class="text-center outline outline-black rounded-md">
-                    <td class="gff">6</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-            <!-- finish table -->
-            <!-- start nav -->
-            <nav class="flex w-1/4 m-auto justify-between">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="cursor-pointer">
-                    <path fill="currentColor" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-                </svg>
-                <a href="" class="w-8 visited:bg-red-300  text-center rounded-lg">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="cursor-pointer">
-                    <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                </svg>
-            </nav>
-            <!-- finish nav -->
+            <!-- finish user -->            
         </div>
         <!-- finish main -->
     </div>
