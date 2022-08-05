@@ -158,27 +158,28 @@
     </div>
     <!-- finish logout confirm -->
     <!-- start change password -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white outline outline-1 outline-gray-400 rounded-xl block shadow-lg z-50">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white outline outline-1 outline-gray-400 rounded-xl flex-col items-center px-4 py-4 shadow-lg z-50 font-poppins">
         <!-- form change password -->
         <form action="">
-            <tr>
-                <td>Password</td>
-                <td>
-                    <input type="password">
-                </td>
-            </tr>
-            <tr>
-                <td>New Password</td>
-                <td>
-                    <input type="password">
-                </td>
-            </tr>
-            <tr>
-                <td>Re-Password</td>
-                <td>
-                    <input type="password">
-                </td>
-            </tr>
+            <table>
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="cursor-pointer">
+                    <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+                </svg>
+                <h1 class="font-bold text-xl mb-4 mt-4">Reset Password</h1>
+                <div class="flex flex-col mb-3">
+                    <label for="" class="text-xs text-gray-300">Current Password</label>
+                    <input type="password" class="border-b-2 outline-none">
+                </div>
+                <div class="flex flex-col mb-3">
+                    <label for="" class="text-xs text-gray-300">New Password</label>
+                    <input type="password" class="border-b-2 outline-none">
+                </div>
+                <div class="flex flex-col mb-3">
+                    <label for="" class="text-xs text-gray-300">Confirm New Password</label>
+                    <input type="password" class="border-b-2 outline-none">
+                </div>
+                <button type="submit" class="text-white bg-secondary w-full rounded-sm hover:scale-105">Submit</button>
+            </table>
         </form>
     </div>
     <!-- finish change password -->
